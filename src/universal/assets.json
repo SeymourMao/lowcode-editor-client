@@ -1,7 +1,7 @@
 {
   "packages": [
     {
-      "package": "moment",
+      "package": "moment2",
       "version": "2.24.0",
       "urls": [
         "https://g.alicdn.com/mylib/moment/2.24.0/min/moment.min.js"

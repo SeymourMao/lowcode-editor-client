@@ -53,6 +53,7 @@ export default async function registerPlugins() {
   plugins.register(SimulatorResizer);
 
   const editorInit = (ctx: ILowCodePluginContext) => {
+    debugger
     return {
       name: 'editor-init',
       async init() {
@@ -64,7 +65,7 @@ export default async function registerPlugins() {
         // ).json();
         // 设置物料描述
         const { material, project } = ctx;
-
+        debugger
         await material.setAssets(await injectAssets(assets));
 
         const schema = await getPageSchema();
@@ -107,7 +108,7 @@ export default async function registerPlugins() {
           props: {
             align: 'top',
             icon: 'zujianku',
-            description: '组件库',
+            description: '组件库2',
           },
         });
         componentsPane?.disable?.();
